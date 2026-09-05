@@ -1,0 +1,62 @@
+﻿;+------------------------------------------------------------------+
+;| 04_Personal_Nasdaq_AllInSniper_300.set                           |
+;| แนวทาง: [พอร์ตส่วนตัว] สไนเปอร์แนสแด็ก - ไม้หนัก ทบกำไร รันเทรนด์ยาว|
+;| สินทรัพย์: NAS100 / USTEC | ไทม์เฟรม: H1 | ทุนเริ่มต้น: $300 USD  |
+;| เป้าหมาย: ปั้นกำไร +200% ถึง +300% ($300 -> $900 ถึง $1,200)      |
+;| สเปก: Win Rate 84.6% | เสี่ยง 30% ทบต้น | SL 1.0x | TP Runner 3.5x|
+;| กลยุทธ์: Fast BE (+0.5x) ปลดเสี่ยง $0 | ปิดล็อก 50% ที่ +1.5x ATR|
+;+------------------------------------------------------------------+
+StrategyProfile=2
+MagicNumber=202604
+SilentMode=true
+AutoDetectBrokerGMT=true
+ManualBrokerGMTOffset=3
+TargetModelGMTOffset=3
+LotMode=1
+FixedLotSize=0.150000
+RiskPercentPerTrade=30.000000
+MarginUsagePercent=60.000000
+MaxOpenPositions=1
+UseDailyLossLimit=false
+DailyLossLimitMode=0
+DailyLossLimitPct=50.000000
+DailyLossLimitUSD=150.000000
+EmergencyCloseOnDailyLimit=false
+UseMaxDrawdownLimit=false
+MaxDrawdownType=0
+MaxDrawdownLimitMode=0
+MaxDrawdownLimitPct=80.000000
+MaxDrawdownLimitUSD=250.000000
+EmergencyCloseOnMaxDDLimit=false
+UseDailyProfitTarget=true
+DailyProfitTargetUSD=600.000000
+PredictionThreshold=0.600000
+TP_ATR_Multiplier=3.500000
+SL_ATR_Multiplier=1.000000
+UseShortModel=true
+PredictionThresholdShort=0.630000
+TP_ATR_MultiplierShort=3.500000
+SL_ATR_MultiplierShort=1.000000
+AllowMultiplePositions=false
+UseNYSessionFilter=false
+MaxSpreadPoints=3500
+MinBarsHistory=100
+UseTrailingStop=true
+TrailingStartATR=1.500000
+TrailingDistanceATR=1.000000
+UseBreakEven=true
+BreakEvenTriggerATR=0.500000
+BreakEvenBufferPoints=100
+MinTrailingStepPoints=15
+UsePartialClose=true
+PartialCloseTriggerATR=1.500000
+UseBasketTP=false
+BasketTP_USD=500.000000
+ShowDashboard=true
+DashboardX=10
+DashboardY=20
+CloseAllBeforeMidnight=false
+CloseAllOnFriday=true
+FridayCloseHour=22
+FridayCloseMinute=30
+NoNewTradesAfterHour=22
